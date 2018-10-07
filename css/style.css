@@ -306,7 +306,6 @@ header .form-control::placeholder {
   /* border: 1px solid red; */
   background-color: #fff;
   padding: 1.6rem 2.5rem 1.7rem;
-  /* margin-top: 1rem; */
 }
 
 .sec-2 .text h2 {
@@ -330,15 +329,18 @@ header .form-control::placeholder {
   background: var(--secondary-color);  
 }
 
+@media (min-width: 768px) {
+  .sec-2 .text { 
+    position: relative;
+    right: 14rem; 
+  }
+}
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   .sec-2 .text {
-    /* border: 1px solid gold; */
     padding: 1.4rem 2rem 1.7rem;
     margin-top: 0.4rem;
-    position: relative;
-    right: 14rem;
     width: 44rem;
   }  
   .sec-2 .text h2 {
@@ -358,10 +360,7 @@ header .form-control::placeholder {
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .sec-2 .text {
-    /* border: 1px solid lime; */
     padding: 1.4rem 2.6rem 1.7rem;
-    position: relative;
-    right: 14rem;
     width: 50rem;
   }  
   .sec-2 .text h2 {
@@ -369,26 +368,27 @@ header .form-control::placeholder {
   }  
   .sec-2 .text p {
     font-size: 1.6rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.05rem;
   }  
   .sec-2 .my-btn {
     font-size: 2.5rem;
-    padding: 0.2rem 4rem;
   }
 
  }
 
 @media (min-width: 992px) {
   .sec-2 .text { margin-top: 1rem; }
+
+  .sec-2 .text p { 
+    line-height: 2.4rem; 
+    letter-spacing: 0.05rem;
+  }
+
+  .sec-2 .my-btn { padding: 0.2rem 4rem; }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .sec-2 .text {
-    /* border: 1px solid cyan; */
-    position: relative;
-    right: 14rem;
     width: 60rem;
     padding: 1.6rem 3.6rem 1.7rem;
   }
@@ -399,13 +399,10 @@ header .form-control::placeholder {
   
   .sec-2 .text p {
     font-size: 2rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.05rem;
   }
   
   .sec-2 .my-btn {
     font-size: 3rem;
-    padding: 0.2rem 4rem;
   }
  }
 
@@ -421,7 +418,6 @@ header .form-control::placeholder {
   /* border: 2px solid gold; */
   background-color: var(--sec-bg);
   padding: 1.6rem 2.5rem 1.7rem;
-  /* margin-top: 1rem; */
   z-index: 9999;
 }
 
@@ -435,25 +431,25 @@ header .form-control::placeholder {
 .sec-3 .text p {
   font-size: 1.5rem;
   font-family: proxima;
-  color: #646262;
+  font-weight: bold;
   line-height: 2rem;
   letter-spacing: 0.04rem;
-  font-weight: bold;
   margin-bottom: 1.3rem;
+  color: #646262;
 }
 
 .sec-3 .my-btn {
   background: var(--primary-color);  
 }
 
+@media (min-width: 768px) { 
+  .sec-3 .text { position: relative; }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   .sec-3 .text {
-    /* border: 1px solid gold; */
     padding: 1.4rem 2rem 1.7rem;
-    margin-top: 3rem;
-    position: relative;
-    left: 0;
     width: 40rem;
   }  
   .sec-3 .text h2 {
@@ -473,11 +469,7 @@ header .form-control::placeholder {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .sec-3 .text {
-    /* border: 1px solid lime; */
     padding: 1.4rem 2.6rem 1.7rem;
-    margin-top: 3rem;
-    position: relative;
-    left: 0;
     width: 50rem;
   }  
   .sec-3 .text h2 {
@@ -485,23 +477,27 @@ header .form-control::placeholder {
   }  
   .sec-3 .text p {
     font-size: 1.6rem;
-    line-height: 2.4rem;
     letter-spacing: 0.05rem;
   }  
   .sec-3 .my-btn {
     font-size: 2.5rem;
-    padding: 0.2rem 4rem;
   }
+ }
 
+@media (min-width: 992px) {
+  .sec-3 .text p { line-height: 2.4rem; }
+
+  .sec-3 .my-btn { padding: 0.3rem 4rem; }
+}
+
+ @media (max-width: 1199.98px) {
+  .sec-3 .text { margin-top: 3rem; }
  }
 
   /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .sec-3 .text {
-    /* border: 1px solid cyan; */
     margin-top: 2rem;
-    position: relative;
-    left: 0;
     width: 60rem;
     padding: 1.6rem 3.6rem 1.7rem;
   }
@@ -512,13 +508,11 @@ header .form-control::placeholder {
   
   .sec-3 .text p {
     font-size: 2rem;
-    line-height: 2.4rem;
     letter-spacing: 0.05rem;
   }
   
   .sec-3 .my-btn {
     font-size: 3rem;
-    padding: 0.3rem 4rem;
   }
  }
 
@@ -527,7 +521,7 @@ header .form-control::placeholder {
 
  /* ***** Sec-4 ***** */
  .sec-4 {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   background-image: url('../img/wall.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,20 +577,21 @@ header .form-control::placeholder {
   padding-top: 3px;
 }
 
- /* Medium devices (tablets, 768px and up) */
- @media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
+  .sec-4 h3 { letter-spacing: 0.4rem; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .sec-4 h3 {
     font-size: 3.8rem;
     line-height: 4rem;
-    letter-spacing: 0.4rem;
   }
 
   .sec-4 p {
     font-size: 2.6rem;
     line-height: 3rem;
-    letter-spacing: 0.3rem;
    }
-
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -604,13 +599,9 @@ header .form-control::placeholder {
   .sec-4 h3 {
     font-size: 5rem;
     line-height: 5.5rem;
-    letter-spacing: 0.4rem;
   }
 
-  .sec-4 p {
-    font-size: 2.8rem;
-   }
-
+  .sec-4 p { font-size: 2.8rem; }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -618,7 +609,6 @@ header .form-control::placeholder {
   .sec-4 h3 {
     font-size: 6rem;
     line-height: 6.4rem;
-    letter-spacing: 0.4rem;
   }
   .sec-4 p {
     font-size: 3rem;
@@ -644,16 +634,16 @@ header .form-control::placeholder {
 }
 .sec-5 h3 {
   color: var(--primary-color);
-  font-size: 1.8rem;
   font-family: bebas-light;
   font-weight: bold;
+  font-size: 1.8rem;
   line-height: 1.2rem;
 }
 
 .sec-5 a {
+  display: inline-block;
   font-weight: bold;
   font-family: bebas-book;
-  display: inline-block;
   font-size: 1.2rem;
   color: #475766;
 }
@@ -669,8 +659,7 @@ header .form-control::placeholder {
   }
   .sec-5 ul li {
     font-size: 1.4rem;
-  }
-  
+  }  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -694,18 +683,14 @@ header .form-control::placeholder {
   .sec-5 h3 {
     font-size: 3rem;
   }
-
   .sec-5 a {
     font-size: 1.6rem;
   }
-
 }
 
 .sec-5 .img-row {
   margin-bottom: 40px;
 }
-
-
 
 
 /* ******* Sec - 6 ******** */
@@ -728,42 +713,38 @@ header .form-control::placeholder {
 }
 .sec-6 h3 {
   color: var(--primary-color);
-  font-size: 1.8rem;
   font-family: bebas-light;
   font-weight: bold;
+  font-size: 1.8rem;
   line-height: 1.2rem;
 }
 
-.sec-6 img {
-  /* width: 100%; */
-}
+/* .sec-6 img {
+  width: 100%;
+} */
 
 .sec-6 a {
   display: inline-block;
   color: var(--nav-color);
   font-family: bebas-book;
-  font-size: 1.4rem;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 .sec-6 a:hover { text-decoration: none;}
 
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-  .img-wrapper {
-    /* border: 3px solid cyan; */
-    text-align: center;
-  }
-
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .sec-6 h2 {
     font-size: 2.9rem;
   }
-  .sec-6 h3 {
-    font-size: 1.8rem;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .img-wrapper {
+    /* border: 2px solid cyan; */
+    text-align: center;
   }
 }
 
@@ -789,13 +770,13 @@ header .form-control::placeholder {
   .sec-6 h3 {
     font-size: 3rem;
   }
-
   .sec-6 a {
     font-size: 1.6rem;
   }
-
 }
 
+
+/* ***** Footer ***** */
 
 footer {
   padding: 25px 0 15px;
@@ -826,6 +807,10 @@ footer li a {
   font-size: 2.4rem;
 }
 
+footer nav.nav {
+  margin: 0 auto;
+}
+
 footer nav a {
   display: inline-block;
   font-size: 1.6rem;
@@ -835,4 +820,29 @@ footer p {
   font-size: 1.6rem;
   font-family: bebas-light;
   font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  footer .row:last-child {
+    text-align: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 575px) {
+  footer nav.nav {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  footer nav.nav {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  footer nav.nav { width: 53%; }
+}
+@media (max-width: 400px) {
+  footer nav.nav { width: 63%; }
+}
+@media (max-width: 350px) {
+  footer nav.nav { width: 72%; }
 }
