@@ -50,13 +50,13 @@ html {
 body {
   --primary-color: #094178;
   --secondary-color: #b3392c;
-  --nav-color: #  766;
+  --nav-color: #475766;
   --sec-bg: #e7e8ed;
   --primary-heading-size: 4.8rem;
 }
 
 .navbar-light .navbar-toggler {
-  color: #475766;
+  color: var(--nav-color);
   border: 0;
 }
 
