@@ -1,0 +1,15 @@
+1 > clientsoftech.com (Check fonts)	- Done
+
+2 > images size	-	Done
+
+3 > line-height og "by signing"	- 	Done
+
+4 > google n apple button with input field on HOME Page
+
+5 > Footer buttons on small screens and margin
+
+6 > Menu at middle on small screens
+
+7 > Menu Font Size	-	Done
+
+IMP: Check all the sec's margin n padding

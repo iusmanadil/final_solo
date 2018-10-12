@@ -55,6 +55,8 @@ body {
   --primary-heading-size: 4.8rem;
 }
 
+a { display: inline-block;}
+
 .navbar-light .navbar-toggler {
   color: var(--nav-color);
   border: 0;
@@ -80,24 +82,21 @@ body {
 }
 
 .my-btn {
-  display: inline-block;
   color: #fff;
   font-size: 2rem;
   padding: 0.2rem 4rem;
   font-family: bebas-bold;
   border-radius: 0;
   text-transform: uppercase;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .my-btn:hover {
   text-decoration: none;
   color: #fff;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 header {
@@ -111,7 +110,7 @@ header {
   height: 76rem;
 }
 .home.bg-img {
-  background-image: url('../img/hero.png');
+  background-image: url('../img/hero.jpg');
 }
 .why-solo-bg.bg-img {
   background-image: url('../img/why-hero.png');
@@ -123,7 +122,7 @@ header {
   text-transform: uppercase;
   color: var(--nav-color)!important;
   font-family: ostrich;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 
@@ -193,6 +192,11 @@ header .custom-select {
   height: 6rem;
 }
 
+header .custom-select:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
 .fa-chevron-down {
   position: relative;
   right: 5rem;
@@ -222,6 +226,18 @@ header .custom-select {
 
 .btns-store a:nth-child(2) {
   margin-left: 2rem;
+}
+
+@media (min-width: 1200px) {
+  /* Navbar */
+  .navbar .nav-link {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav { text-align: center; }
 }
 
 @media (max-width: 767.98px) {
@@ -567,15 +583,24 @@ header .custom-select {
 
  .sec-4 .form-control {
    font-size: 1.5rem;
-   padding: 10px;
+   padding: 1rem;
+   height: 4.4rem;
+   border: 0;
  }
+
+ .form-control:focus {
+  color: #757575;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
 
  .sec-4 .form-control::placeholder {
   font-size: 1.4rem;
   font-family: arial;
   color: #757575;
   letter-spacing: 0.2rem;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .sec-4 .input-group-text {
@@ -875,7 +900,7 @@ header .custom-select {
   .why-solo_sec-5 p {
     font-size: 2.4rem;
     letter-spacing: 0.05rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -959,7 +984,7 @@ header .custom-select {
 .why-solo_sec-4 .row:nth-child(2) p {
   /* border: 2px solid lime; */
   font-size: 1.8rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   color: #0a0909;
 }
 
@@ -998,6 +1023,11 @@ header .custom-select {
   padding: 2rem 0 5rem;
 }
 
+@media (min-width: 576px) {
+  .why-solo_sec-5 h2 {
+    text-align: right;
+  }
+}
 
 
 /* ***** Footer ***** */
