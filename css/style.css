@@ -35,6 +35,10 @@
   src: url(fonts/Proxima-Nova-Thin.ttf);
 }
 @font-face {
+  font-family: 'proxima-regular';
+  src: url(fonts/proxima-regular.ttf);
+}
+@font-face {
   font-family: 'proxima-bold';
   src: url(fonts/Proxima-Nova-Bold.ttf);
 }
@@ -1021,6 +1025,62 @@ header .custom-select:focus {
     text-align: right;
   }
 }
+
+
+
+
+
+
+
+            /* ***** About Page ***** */
+
+/* Sec-2 */
+
+.about_sec-2 {
+  /* border: 2px solid orange; */
+  padding-top: 7.5rem;
+  position: relative;
+}
+
+.about-sec {
+  /* border: 2px solid lime; */
+}
+
+.about-text {
+  /* border: 2px solid cyan; */
+  position: absolute;
+  top: 0;
+}
+
+.about-text > div {
+  background-color: rgba(214, 211, 210, .8);
+  padding: 2rem 3rem 4rem;
+}
+
+.about-text h2 {
+  font-family: proxima-bold;
+  font-size: 4.8rem;
+}
+
+.about_sec-2 p {
+  font-size: 1.95rem;
+  font-family: proxima;
+  font-weight: bold;
+  letter-spacing: .5px;
+  line-height: 3rem;
+}
+
+
+@media(min-width: 1400px) {
+  .about-text > div {
+    padding: 3rem 10rem 4rem;
+  }
+}
+
+
+
+
+
 
 
 /* ***** Footer ***** */
