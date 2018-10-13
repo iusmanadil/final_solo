@@ -577,7 +577,6 @@ header .custom-select:focus {
  }
  
  .sec-4 .row:nth-child(2) {
-   /* border: 2px solid gold; */
    margin: 5px 0 35px;
  }
 
@@ -588,9 +587,12 @@ header .custom-select:focus {
    border: 0;
  }
 
+ .phone-input:focus {
+  border-color: transparent;
+}
+
  .form-control:focus {
   color: #757575;
-  border-color: transparent;
   outline: 0;
   box-shadow: none;
 }
@@ -737,12 +739,10 @@ header .custom-select:focus {
 .sec-6 { background-color: var(--sec-bg); }
 
 .sec-6 .right-col {
-  /* border: 2px solid blue; */
   padding: 30px 0 20px;
 }
 
 .right-col > .row:nth-child(3) {
-  /* border: 2px solid #000; */
   margin-top: 30px;
 }
 
@@ -783,7 +783,6 @@ header .custom-select:focus {
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .img-wrapper {
-    /* border: 2px solid cyan; */
     text-align: center;
   }
 }
@@ -824,7 +823,6 @@ header .custom-select:focus {
 /* ***** Why Solo ***** */
 
 .why_solo-hero {
-  /* border: 2px solid cyan; */
   padding-top: 5rem;
 }
 
@@ -957,10 +955,6 @@ header .custom-select:focus {
   margin-top: 2rem;
 }
 
-.why-solo_sec-4 .row:nth-child(2) > div {
-  /* border: 1px solid #000; */
-}
-
 .why-solo_sec-4 .form-control-lg {
   border-top: 1px solid #ccc;
   border-radius: 1rem;
@@ -982,7 +976,6 @@ header .custom-select:focus {
 }
 
 .why-solo_sec-4 .row:nth-child(2) p {
-  /* border: 2px solid lime; */
   font-size: 1.8rem;
   line-height: 1.8rem;
   color: #0a0909;
@@ -1044,6 +1037,7 @@ footer h3 {
 
 footer ul {
   list-style-type: none;
+  padding-inline-start: 3rem;
 }
 
 footer a {
@@ -1061,6 +1055,10 @@ footer li a {
   font-size: 2.4rem;
 }
 
+footer .col:last-child li {
+  margin: .5rem 0 1rem;
+}
+
 footer nav.nav {
   margin: 0 auto;
 }
@@ -1075,6 +1073,7 @@ footer p {
   font-family: bebas-light;
   font-weight: bold;
 }
+
 
 @media (max-width: 575px) {
   footer .row:last-child {
