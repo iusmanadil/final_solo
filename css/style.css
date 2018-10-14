@@ -1222,7 +1222,6 @@ select.form-control {
 
 @media(min-width: 768px) {
   .about_sec-3 {
-    border: 2px solid orange;
     padding-top: 20rem;
   }
 }
