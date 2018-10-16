@@ -1178,7 +1178,8 @@ select.form-control {
 }
 
 .about_sec-2 p,
-.about_sec-3 p {
+.about_sec-3 p,
+.about_sec-4 p {
   font-size: 1.95rem;
   font-family: proxima;
   font-weight: bold;
@@ -1215,14 +1216,15 @@ select.form-control {
 
 /* Sec-4 */
 
-.about-text_sec-4 > div {
-  height: 30rem;
-}
+
 
 
 @media(min-width: 768px) {
   .about_sec-3 {
     padding-top: 20rem;
+  }
+  .about-text_sec-4 h2 {
+    margin-bottom: 2rem;
   }
 }
 @media(max-width: 768px) {
